@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foods - Restaurant Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Additional styles for search */
+        #searchInput {
+            width: 60%;
+            padding: 1%;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 20px auto;
+            display: block;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <section class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="assets/images/logo.webp" alt="Restaurant Logo" class="img-responsive"></a>
+            </div>
+            <div class="menu text-right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="foods.html">Foods</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+    <!-- Search Bar -->
+    <input type="text" id="searchInput" placeholder="Search for food...">
+
+    <!-- Food Menu -->
+    <section class="food-menu">
+        <div class="container">
+            <h2 class="text-center">Food Menu</h2>
+
+            <div class="food-menu-box" data-name="chicken briyani">
+                <div class="food-menu-img">
+                    <img src="assets/images/chicken-briyani.webp" alt="Chicken Biryani" class="img-responsive img-curve">
+                </div>
+                <div class="food-menu-desc">
+                    <h4>Chicken Biryani</h4>
+                    <p class="food-price">₹180</p>
+                    <p class="food-detail">
+                        Aromatic basmati rice layered with spicy chicken and herbs.<br>
+                        Served with raita and a hit of South Indian flavor.
+                    </p>
+                    <br>
+                    <a href="order.html" class="btn btn-primary">Order Now</a>
+                </div>
+            </div>
+
+            <div class="food-menu-box" data-name="tandoori briyani">
+                <div class="food-menu-img">
+                    <img src="assets/images/tandoori-briyani.webp" alt="Tandoori Biryani" class="img-responsive img-curve">
+                </div>
+                <div class="food-menu-desc">
+                    <h4>Tandoori Biryani</h4>
+                    <p class="food-price">₹250</p>
+                    <p class="food-detail">
+                        Fusion of tandoori-marinated chicken and rich biryani spices.<br>
+                        Charred to perfection with a smoky, bold finish.
+                    </p>
+                    <br>
+                    <a href="order.html" class="btn btn-primary">Order Now</a>
+                </div>
+            </div>
+
+            <div class="food-menu-box" data-name="tandoori">
+                <div class="food-menu-img">
+                    <img src="assets/images/tandoori.webp" alt="Tandoori" class="img-responsive img-curve">
+                </div>
+                <div class="food-menu-desc">
+                    <h4>Tandoori</h4>
+                    <p class="food-price">₹350</p>
+                    <p class="food-detail">
+                        Whole chicken roasted in clay oven with signature masalas.<br>
+                        Crispy outside, juicy inside — North Indian classic.
+                    </p>
+                    <br>
+                    <a href="order.html" class="btn btn-primary">Order Now</a>
+                </div>
+            </div>
+
+            <div class="food-menu-box" data-name="burger">
+                <div class="food-menu-img">
+                    <img src="assets/images/burger.webp" alt="Burger" class="img-responsive img-curve">
+                </div>
+                <div class="food-menu-desc">
+                    <h4>Burger</h4>
+                    <p class="food-price">₹249</p>
+                    <p class="food-detail">
+                        Loaded with a juicy patty, melting cheese, and fresh veggies.<br>
+                        Comes with house sauce inside a toasted bun.
+                    </p>
+                    <br>
+                    <a href="order.html" class="btn btn-primary">Order Now</a>
+                </div>
+            </div>
+
+            <div class="food-menu-box" data-name="pizza">
+                <div class="food-menu-img">
+                    <img src="assets/images/pizza.webp" alt="Pizza" class="img-responsive img-curve">
+                </div>
+                <div class="food-menu-desc">
+                    <h4>Pizza</h4>
+                    <p class="food-price">₹479</p>
+                    <p class="food-detail">
+                        Hand-tossed crust, gooey cheese, and sizzling toppings.<br>
+                        A party on a plate, baked fresh and hot.
+                    </p>
+                    <br>
+                    <a href="order.html" class="btn btn-primary">Order Now</a>
+                </div>
+            </div>
+
+            <div class="food-menu-box" data-name="raspberry cheesecake">
+                <div class="food-menu-img">
+                    <img src="assets/images/raspberry-cheesecake.webp" alt="Raspberry Cheesecake" class="img-responsive img-curve">
+                </div>
+                <div class="food-menu-desc">
+                    <h4>Raspberry Cheesecake</h4>
+                    <p class="food-price">₹200</p>
+                    <p class="food-detail">
+                        Creamy cheesecake swirled with tangy raspberry puree.<br>
+                        Chilled dessert delight for berry lovers.
+                    </p>
+                    <br>
+                    <a href="order.html" class="btn btn-primary">Order Now</a>
+                </div>
+            </div>
+
+            <div class="food-menu-box" data-name="chocolate mousse">
+                <div class="food-menu-img">
+                    <img src="assets/images/chocolate-mousse.webp" alt="Chocolate Mousse" class="img-responsive img-curve">
+                </div>
+                <div class="food-menu-desc">
+                    <h4>Chocolate Mousse</h4>
+                    <p class="food-price">₹225</p>
+                    <p class="food-detail">
+                        Airy, rich, and indulgent — dark chocolate heaven.<br>
+                        Perfect blend of fluff and flavor in every bite.
+                    </p>
+                    <br>
+                    <a href="order.html" class="btn btn-primary">Order Now</a>
+                </div>
+            </div>
+
+            <div class="food-menu-box" data-name="creme caramel cake">
+                <div class="food-menu-img">
+                    <img src="assets/images/creme-caramel-cake.webp" alt="Creme Caramel Cake" class="img-responsive img-curve">
+                </div>
+                <div class="food-menu-desc">
+                    <h4>Crème Caramel Cake</h4>
+                    <p class="food-price">₹225</p>
+                    <p class="food-detail">
+                        Soft sponge layered with silky caramel custard.<br>
+                        Light, luscious, and oh-so-satisfying.
+                    </p>
+                    <br>
+                    <a href="order.html" class="btn btn-primary">Order Now</a>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const foodBoxes = document.querySelectorAll('.food-menu-box');
+
+        searchInput.addEventListener('input', function () {
+            const value = this.value.toLowerCase();
+            foodBoxes.forEach(box => {
+                const name = box.getAttribute('data-name');
+                if (name.includes(value)) {
+                    box.classList.remove('hidden');
+                } else {
+                    box.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
